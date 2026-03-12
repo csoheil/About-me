@@ -1,0 +1,266 @@
+/* style.css */
+
+/* Base setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0b0b0b;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header and navbar */
+.header {
+  background: linear-gradient(to right, #000, #001f3f);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 255, 0.2);
+}
+
+.logo {
+  color: #00aaff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #00aaff;
+  text-shadow: 0 0 10px #00aaff;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+  background: radial-gradient(circle at 20% 20%, #001f3f, #000);
+  animation: fadeInHero 2s ease;
+}
+
+@keyframes fadeInHero {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 3px solid #00aaff;
+  box-shadow: 0 0 20px rgba(0, 170, 255, 0.5);
+}
+
+.hero-title {
+  color: #00aaff;
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+.hero-subtitle {
+  color: #ccc;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Social links */
+.social-links {
+  margin-top: 25px;
+}
+
+.social-links a {
+  color: #00aaff;
+  margin: 0 10px;
+  transition: transform 0.3s ease, color 0.3s;
+}
+
+.social-links a:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+/* Section general */
+.section-padding {
+  padding: 60px 0;
+}
+
+.section-title {
+  color: #00aaff;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* About section */
+.about-content {
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+/* Portfolio section */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.portfolio-item {
+  background: #101010;
+  border: 1px solid #002f5f;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 170, 255, 0.3);
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/* Blog section */
+.blog-posts {
+  display: grid;
+  gap: 30px;
+}
+
+.blog-post {
+  background: #101010;
+  padding: 20px;
+  border-left: 4px solid #00aaff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.2);
+}
+
+.post-date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* Contact section */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #e0e0e0;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #002f5f;
+  border-radius: 5px;
+  background-color: #181818;
+  color: #e0e0e0;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #00aaff;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.3);
+}
+
+.submit-button {
+  background-color: #00aaff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0088cc;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  text-align: center;
+  padding: 20px 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
