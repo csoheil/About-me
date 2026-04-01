@@ -376,11 +376,11 @@ textarea {
   bottom: 25px;
   right: 25px;
   background-color: #00aaff;
-  color: #fff;
+  color: #717070;
   border: none;
   padding: 12px 18px;
   border-radius: 50px;
-  box-shadow: 0 0 15px rgba(0, 170, 255, 0.5);
+  box-shadow: 0 0 15px rgba(36, 120, 162, 0.5);
   cursor: pointer;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -388,29 +388,29 @@ textarea {
 }
 
 #theme-toggle:hover {
-  background-color: #0088cc;
+  background-color: #0c4361;
   transform: scale(1.05);
 }
 
 /* Light mode overrides */
 body.light-mode {
-  background-color: #f7f9fc;
-  color: #111;
+  background-color: #727376;
+  color: #282727;
 }
 
 body.light-mode .navbar {
-  background-color: #e8eff6;
+  background-color: #636465;
 }
 
 body.light-mode .hero-section {
-  background-color: #f0f6ff;
+  background-color: #696a6b;
 }
 
 body.light-mode a {
-  color: #0077cc;
+  color: #1f5176;
 }
 
 body.light-mode .profile-picture {
-  border-color: #0077cc;
-  box-shadow: 0 0 20px rgba(0, 119, 204, 0.4);
+  border-color: #1a4b6f;
+  box-shadow: 0 0 20px rgba(18, 77, 119, 0.4);
 }
