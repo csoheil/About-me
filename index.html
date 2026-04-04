@@ -5,120 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soheil Mohammadi Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">My Profile</h1>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <nav class="navbar">
+            <!-- <div class="nav-logo"><a href="#home">YourLogo</a></div> -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle-container">
+                <button id="theme-toggle-button" aria-label="Toggle dark mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="profile-picture-container">
-                        <img src="https://via.placeholder.com/200/0000FF/FFFFFF?text=Your+Photo" alt="Profile Picture" class="profile-picture">
-                    </div>
-                    <h2 class="hero-title">Hello, I'm Soheil Mohammadi</h2>
-                    <p class="hero-subtitle">A passionate Full-stack Developer creating high-quality products</p>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/csoheil" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
-                        <a href="https://github.com/csoheil" target="_blank" aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a>
-                        <a href="https://ctask.com" target="_blank" aria-label="Website"><i class="fas fa-globe fa-2x"></i></a>
-                        
-                    </div>
-                </div>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Hello, I'm Soheil Mohammadi</h1>
+                <p>A passionate Full-stack Developer creating high-quality products</p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+            <div class="hero-image">
+                <img src="placeholder-profile.png" alt="Your Name" id="profile-pic">
             </div>
         </section>
 
-        <section id="about" class="about-section section-padding">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <p>
-                    //////
-                    </p>
-                    <p>
-                        ////////
-                    </p>
-                </div>
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate veniam, reiciendis itaque consequatur necessitatibus omnis ad praesentium harum placeat, nemo blanditiis atque iusto corrupti debitis, sint autem ex repudiandae odit.</p>
+            <div class="skills-list">
+                <h3>Skills:</h3>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Web Development</li>
+                    <li>PHP</li>
+                    <li>HTML/CSS</li>
+                    <li>linux</li>
+            
+                </ul>
             </div>
         </section>
 
-        <section id="portfolio" class="portfolio-section section-padding">
-            <div class="container">
-                <h2 class="section-title">My Work & Projects</h2>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <h3>ctask</h3>
-                        <p>i gonna compelete this field</p>
-                        <a href="#" target="_blank" class="project-link">View Project</a>
-                    </div>
-                    <div class="portfolio-item">
-                        <h3>typing-test</h3>
-                        <p>i gonna compelete this field</p>
-                        <a href="#" target="_blank" class="project-link">View Project</a>
-                    </div>
-                    <div class="portfolio-item">
-                        <h3>school-management</h3>
-                        <p>i gonna compelete this field</p>
-                        <a href="#" target="_blank" class="project-link">View Project</a>
-                    </div>
-                    
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="placeholder-project1.png" alt="Project 1">
+                    <h3>i gonna complete this field</h3>
+                    <p>i gonna complete this field</p>
+                    <a href="#" target="_blank">Live Demo</a> | <a href="#" target="_blank">GitHub Repo</a>
                 </div>
-            </div>
-        </section>
-                    
+                <div class="project-item">
+                    <img src="placeholder-project2.png" alt="Project 2">
+                    <h3>i gonna complete this field</h3>
+                    <p>i gonna complete this fieldp>
+                    <a href="#" target="_blank">Live Demo</a> | <a href="#" target="_blank">GitHub Repo</a>
                 </div>
+                <
             </div>
         </section>
 
-        <section id="contact" class="contact-section section-padding">
-            <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="contact-intro">Have a question or want to collaborate? Send me a message!</p>
-                <form id="contact-form" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">Send Message</button>
-                    <p id="form-status" class="form-status"></p>
-                </form>
+        <section id="contact" class="contact-section">
+            <h2>Get In Touch</h2>
+            <p>Interested in collaborating or have a question? Feel free to reach out!</p>
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com">Email</a>
+                <a href="https://linkedin.com/in/csoheil" target="_blank">LinkedIn</a>
+                <a href="https://github.com/csoheil" target="_blank">GitHub</a>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Soheil Mohammadi. All rights reserved.</p>
-        </div>
+    <footer>
+        <p>&copy; 2026 Soheil Mohammadi. All rights reserved.</p>
     </footer>
 
+    <script src="theme-toggle.js"></script>
     <script src="script.js"></script>
-    <button id="theme-toggle">Toggle Theme</button>
-<script src="theme-toggle.js"></script>
-
 </body>
 </html>
