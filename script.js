@@ -38,11 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 
-    // Add a class to elements when they become visible
-    // This needs to be defined in CSS to actually animate them
-    // Example CSS:
-    // .about-content { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
-    // .about-content.is-visible { opacity: 1; transform: translateY(0); }
+
 
     // Contact form submission
     const contactForm = document.getElementById('contact-form');

@@ -3,7 +3,7 @@
     /* Dark Mode Variables */
     --bg-color-dark: #1a1a1a;
     --text-color-dark: #e0e0e0;
-    --primary-color-dark: #4a90e2; /* Blue */
+    --primary-color-dark: #3e4144; /* Blue */
     --secondary-color-dark: #2c2c2c; /* Slightly lighter than bg for contrast */
     --navbar-bg-dark: #222;
     --card-bg-dark: #2c2c2c;
@@ -11,7 +11,7 @@
     /* Light Mode Variables */
     --bg-color-light: #f4f4f4;
     --text-color-light: #333;
-    --primary-color-light: #007bff; /* Standard blue */
+    --primary-color-light: #494c4f; /* Standard blue */
     --secondary-color-light: #fff;
     --navbar-bg-light: #fff;
     --card-bg-light: #fff;
@@ -42,7 +42,7 @@ a {
 }
 
 a:hover {
-    color: #6bb7f0; /* Lighter blue for hover */
+    color: #89969f; /* Lighter blue for hover */
 }
 
 img {
@@ -155,9 +155,9 @@ img {
 }
 
 .cta-button:hover {
-    background-color: #6bb7f0;
+    background-color: #1d2125;
     transform: translateY(-3px); /* More pronounced lift */
-    box-shadow: 0 6px 15px rgba(74, 144, 226, 0.4); /* Enhanced shadow */
+    box-shadow: 0 6px 15px rgba(39, 57, 79, 0.4); /* Enhanced shadow */
 }
 
 .hero-image img {
@@ -166,7 +166,7 @@ img {
     border-radius: 50%;
     object-fit: cover;
     border: 6px solid var(--primary-color-dark);
-    box-shadow: 0 0 25px rgba(74, 144, 226, 0.5); /* Stronger dark mode shadow */
+    box-shadow: 0 0 25px rgba(40, 61, 85, 0.5); /* Stronger dark mode shadow */
 }
 
 /* --- Sections (Genneral) --- */
@@ -299,7 +299,7 @@ section h2::after { /* Underline effect */
 
 .project-item a:hover {
     text-decoration: underline;
-    color: #6bb7f0;
+    color: #31414e;
 }
 
 /* --- Contact Section --- */
@@ -330,13 +330,13 @@ section h2::after { /* Underline effect */
     border-radius: 8px;
     font-weight: 600;
     transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
-    box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3);
+    box-shadow: 0 4px 10px rgba(81, 98, 116, 0.3);
 }
 
 .contact-links a:hover {
-    background-color: #6bb7f0;
+    background-color: #4e5962;
     transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(74, 144, 226, 0.4);
+    box-shadow: 0 6px 15px rgba(84, 111, 143, 0.4);
 }
 
 /* --- Footer --- */
@@ -373,7 +373,7 @@ body.light-mode a {
 }
 
 body.light-mode a:hover {
-    color: #0056b3; /* Darker blue for hover */
+    color: #4d6782; /* Darker blue for hover */
 }
 
 body.light-mode .navbar {
@@ -408,7 +408,7 @@ body.light-mode .hero-section {
 
 body.light-mode .hero-image img {
     border-color: var(--primary-color);
-    box-shadow: 0 0 25px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 25px rgba(76, 102, 130, 0.5);
 }
 
 body.light-mode .about-section,
