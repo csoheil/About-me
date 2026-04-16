@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Project One",
+    "description": "A modern landing page built using HTML, CSS, and JavaScript.",
+    "image": "placeholder-project1.png",
+    "url": "#"
+  },
+  {
+    "title": "Project Two",
+    "description": "A responsive web application with dark/light theme support.",
+    "image": "placeholder-project2.png",
+    "url": "#"
+  }
+]

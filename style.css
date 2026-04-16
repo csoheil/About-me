@@ -471,7 +471,7 @@ body.light-mode footer {
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Hide links, implement mobile menu later if needed */
+        display: none; 
     }
     .navbar {
         justify-content: center; /* Center logo and toggle */
