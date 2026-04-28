@@ -1,4 +1,3 @@
-// Load projects dynamically from JSON file
 fetch('projects.json')
   .then(response => response.json())
   .then(data => {
